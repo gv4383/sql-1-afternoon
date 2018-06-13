@@ -1,3 +1,4 @@
+/*** People 1. ***/
 CREATE TABLE Person(
   ID INTEGER PRIMARY KEY AUTOINCREMENT,
   Name string,
@@ -7,17 +8,16 @@ CREATE TABLE Person(
   Favorite_Color string
 );
 
+/*** People 2. ***/
 INSERT INTO Person(Name, Age, Height, City, Favorite_Color)
-VALUES ('Goyo', 23, 180, 'Austin', 'Purple');
+VALUES ('Goyo', 23, 180, 'Austin', 'Purple'),
+('JoeD', 23, 182, 'Austin', 'Green'),
+('Ted', 34, 200, 'Bryan', 'Blue'),
+('Shelby', 21, 170, 'Provo', 'Orange'),
+('Maggie', 22, 174, 'San Jose', 'Yellow');
 
-INSERT INTO Person(Name, Age, Height, City, Favorite_Color)
-VALUES ('JoeD', 23, 182, 'Austin', 'Green');
+/*** People 3. ***/
+SELECT * FROM Person ORDER BY height DESC;
 
-INSERT INTO Person(Name, Age, Height, City, Favorite_Color)
-VALUES ('Ted', 34, 200, 'Bryan', 'Blue');
-
-INSERT INTO Person(Name, Age, Height, City, Favorite_Color)
-VALUES ('Shelby', 21, 170, 'Provo', 'Orange');
-
-INSERT INTO Person(Name, Age, Height, City, Favorite_Color)
-VALUES ('Maggie', 22, 174, 'San Jose', 'Yellow');
+/*** People 4. ***/
+SELECT * FROM Person ORDER BY Height ASC;
