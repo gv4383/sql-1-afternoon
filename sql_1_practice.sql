@@ -82,3 +82,20 @@ SELECT SUM(ProductPrice * Quantity) FROM Orders WHERE PersonID = 0;
 SELECT SUM(ProductPrice * Quantity) FROM Orders WHERE PersonID = 1;
 SELECT SUM(ProductPrice * Quantity) FROM Orders WHERE PersonID = 2;
 
+/*** Artist ***/
+
+-- Artist 1.
+INSERT INTO Artist(Name)
+VALUES ('chicken'), ('squirrel');
+
+-- Artist 2.
+SELECT * FROM Artist ORDER BY Name DESC LIMIT 10;
+
+-- Artist 3.
+SELECT * FROM Artist ORDER BY Name ASC LIMIT 5;
+
+-- Artist 4.
+SELECT * FROM Artist WHERE NAME LIKE 'Black%';
+
+-- Artist 5.
+SELECT * FROM Artist WHERE Name LIKE '%Black%';
