@@ -99,3 +99,20 @@ SELECT * FROM Artist WHERE NAME LIKE 'Black%';
 
 -- Artist 5.
 SELECT * FROM Artist WHERE Name LIKE '%Black%';
+
+/*** Employee ***/
+
+-- Employee 1.
+SELECT FirstName, LastName FROM Employee WHERE City = 'Calgary';
+
+-- Employee 2.
+SELECT FirstName, LastName, Max(BirthDate) FROM Employee;
+
+-- Employee 3.
+SELECT FirstName, LastName, Min(BirthDate) FROM Employee;
+
+-- Employee 4.
+SELECT * FROM Employee WHERE ReportsTo = 2;
+
+-- Employee 5.
+SELECT COUNT(*) FROM Employee WHERE City = 'Lethbridge';
