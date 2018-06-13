@@ -116,3 +116,29 @@ SELECT * FROM Employee WHERE ReportsTo = 2;
 
 -- Employee 5.
 SELECT COUNT(*) FROM Employee WHERE City = 'Lethbridge';
+
+/*** Invoice ***/
+
+-- Invoice 1.
+SELECT COUNT(*) FROM Invoice WHERE BillingCountry = 'USA';
+
+-- Invoice 2.
+SELECT Max(Total) FROM Invoice;
+
+-- Invoice 3.
+SELECT Min(Total) FROM Invoice;
+
+-- Invoice 4.
+SELECT * FROM Invoice WHERE Total > 5;
+
+-- Invoice 5.
+SELECT COUNT(*) FROM Invoice WHERE Total < 5;
+
+-- Invoice 6.
+SELECT COUNT(*) FROM Invoice WHERE BillingState IN ('CA', 'TX', 'AZ');
+
+-- Invoice 7.
+SELECT AVG(Total) FROM Invoice;
+
+-- Invoice 8.
+SELECT SUM(Total) FROM Invoice;
